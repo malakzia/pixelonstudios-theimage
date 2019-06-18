@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Rubik:300,400,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="full-h-with-blue">
+        <img id="the-image" class="full-centered" src="the-image-03.png" />
+        <h1 style="max-width:290px;padding-top: 20px!important;">Just a test</h1>
+        <p style="max-width:290px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt et
+            autem, in minus maxime
+            consequuntur eum, esse eos ut ullam voluptates nihil repellat nobis natus iure harum doloribus quam.</p>
+
+    </div>
+    <div class="full-h">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var theImage = $("#the-image");
+            theImage.css("opacity",
+                "1.0");
+
+            theImage.removeClass("full-centered").addClass("out-50-percent-on-left");
+
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+
+                if (scroll > 50) {
+                    theImage.removeClass("out-50-percent-on-left")
+                    theImage.addClass("out-minus8632--on-left");
+
+                } else {
+                    theImage.addClass("out-50-percent-on-left")
+                    theImage.removeClass("out-minus8632--on-left");
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

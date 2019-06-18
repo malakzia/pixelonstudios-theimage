@@ -1,0 +1,88 @@
+* {
+    padding: 35px;
+    transition: all 2s ease-in-out;
+
+
+}
+
+
+
+body {
+    padding: 0px;
+    font-weight: 100;
+    font-family: 'Rubik',
+        monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+
+    opacity: 90%;
+    padding: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display',
+        serif;
+    font-weight: 700;
+    opacity: 90%;
+    padding: 5px;
+}
+
+.full-h-with-blue {
+    height: 100vh;
+
+    padding-top: 0px !important;
+
+    background-color: white;
+    box-shadow: #5d6da18a 0px 10px 70px;
+}
+
+.full-h {
+    height: 100vh;
+
+    background-color: #fff;
+}
+
+
+.full-h-with-blue .full-centered {
+    position: fixed;
+    width: 256px;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.full-h-with-blue .out-50-percent-on-left {
+    position: fixed;
+    width: 256px;
+
+
+
+    transform: translate(-50%, -50%);
+    left: 0;
+    top: 50%;
+
+    vertical-align: center;
+    padding: 0px;
+}
+
+.full-h-with-blue .out-minus8632--on-left {
+    position: fixed;
+    width: 256px;
+
+
+    transform: translate(-86.328125%, -50%);
+
+    left: 0px;
+    top: 50%;
+    vertical-align: center;
+    padding: 0px;
+}
